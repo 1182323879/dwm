@@ -125,11 +125,11 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ 0,                            0x1008ff11, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/vol.sh down") },
-	{ 0,                            0x1008ff12, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/vol.sh mute") },
-	{ 0,                            0x1008ff13, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/vol.sh up") },
-	{ 0,                            0x1008ff02, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/bri.sh up") },
-	{ 0,                            0x1008ff03, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/bri.sh down") },
+	{ 0,                            XF86XK_MonBrightnessUp, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/bri.sh up") },
+	{ 0,                            XF86XK_MonBrightnessDown, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/bri.sh down") },
+	{ 0,                            XF86XK_AudioLowerVolume, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/vol.sh down") },
+	{ 0,                            XF86XK_AudioMute, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/vol.sh mute") },
+	{ 0,                            XF86XK_AudioRaiseVolume, spawn,          SHCMD("/home/cmsx/.dwm/dwmbar/vol.sh up") },
 };
 
 /* button definitions */
